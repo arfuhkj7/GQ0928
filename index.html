@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>游戏周报 · 2026.09.28</title>
+  <link rel="preload" as="image" href="fish-sort-01.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="minecraft-01.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="godzilla.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="openai-safety.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="fish-sort-02.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="minecraft-02.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="fish-sort-03.webp" type="image/webp" fetchpriority="high">
+  <!-- 基于 html-ppt 的 weekly-report 模板重构：极简 Apple keynote 视觉 -->
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" id="theme-link" href="minimal-white.css">
+  <link rel="stylesheet" href="style.css?v=20260928-1">
+  <style>
+    .tpl-game-weekly .cover-showcase-card:nth-child(1) { --cover-image: url('fish-sort-01.webp') !important; --cover-placeholder: url('fish-sort-01.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(2) { --cover-image: url('minecraft-01.webp') !important; --cover-placeholder: url('minecraft-01.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(3) { --cover-image: url('godzilla.webp') !important; --cover-placeholder: url('godzilla.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(4) { --cover-image: url('openai-safety.webp') !important; --cover-placeholder: url('openai-safety.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(5) { --cover-image: url('fish-sort-02.webp') !important; --cover-placeholder: url('fish-sort-02.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(6) { --cover-image: url('minecraft-02.webp') !important; --cover-placeholder: url('minecraft-02.webp') !important; }
+    .tpl-game-weekly .cover-showcase-card:nth-child(7) { --cover-image: url('fish-sort-03.webp') !important; --cover-placeholder: url('fish-sort-03.webp') !important; }
+  </style>
+</head>
+<body class="tpl-game-weekly">
+  <main class="deck" aria-label="游戏周报">
+
+    <!-- 01 · Cover -->
+    <section class="slide cover-slide dark-slide is-active" data-title="游戏周报">
+      <div class="cover-orb orb-a" aria-hidden="true"></div>
+      <div class="cover-orb orb-b" aria-hidden="true"></div>
+      <div class="cover-showcase" aria-hidden="true">
+        <div class="cover-showcase-cards">
+          <span class="cover-showcase-card" style="--x: -20vw; --y: 7vh; --rotate: -20deg; --delay: .00s; --order: 1;"></span>
+          <span class="cover-showcase-card" style="--x: -13vw; --y: 3vh; --rotate: -13deg; --delay: .055s; --order: 2;"></span>
+          <span class="cover-showcase-card" style="--x: -6.5vw; --y: 0vh; --rotate: -7deg; --delay: .11s; --order: 3;"></span>
+          <span class="cover-showcase-card" style="--x: 0vw; --y: -1vh; --rotate: 0deg; --delay: .165s; --order: 4;"></span>
+          <span class="cover-showcase-card" style="--x: 6.5vw; --y: 0vh; --rotate: 7deg; --delay: .11s; --order: 5;"></span>
+          <span class="cover-showcase-card" style="--x: 13vw; --y: 3vh; --rotate: 13deg; --delay: .055s; --order: 6;"></span>
+          <span class="cover-showcase-card" style="--x: 20vw; --y: 7vh; --rotate: 20deg; --delay: .00s; --order: 7;"></span>
+        </div>
+      </div>
+      <div class="cover-top">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="date-chip">2026 · 09 · 28</span>
+      </div>
+      <div class="cover-content">
+        <p class="eyebrow inverse" data-anim="fade-up">WEEKLY INTELLIGENCE REPORT</p>
+        <h1 class="cover-title" data-anim="fade-up">游戏<span>周报</span></h1>
+        <p class="cover-reporter" data-anim="fade-up">汇报人：盖麒</p>
+        <p class="cover-lede" data-anim="fade-up">从榜单、新游、游戏新维度到AI安全与影视动态，快速捕捉本周游戏行业脉冲。</p>
+        <div class="cover-index" data-anim="fade-up">
+          <span>01&nbsp; 游戏榜单</span><span>02&nbsp; 新游体验</span><span>03&nbsp; 游戏资讯</span><span>04&nbsp; 其它资讯</span>
+        </div>
+      </div>
+      <div class="cover-meta">内部汇报 · 游戏行业观察</div>
+      <span class="page-count inverse">01 / 13</span>
+      <aside class="notes">本周周报覆盖四个部分：榜单表现、新游《Fish Sort Puzzle》体验、Minecraft 公布14年来首个全新维度 The Sift，以及《哥斯拉 Minus Zero》纽约电影节首映和 OpenAI 暂停最强模型训练两条其它资讯。重点是从玩法动态、世界观规模与产业安全边界中提炼可持续跟踪的行业信号。</aside>
+    </section>
+
+    <!-- 02 · Agenda -->
+    <section class="slide agenda-slide" data-title="本周目录">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">WEEKLY REPORT · 09.28</span>
+      </div>
+      <div class="agenda-intro">
+        <p class="eyebrow">THIS WEEK</p>
+        <h2 class="h2">四个切面，<br>看见本周游戏脉冲。</h2>
+      </div>
+      <div class="agenda-grid" data-anim="fade-up">
+        <article class="agenda-item active"><span>01</span><div><b>游戏榜单</b><p>总榜、益智解谜、家庭</p></div><em>→</em></article>
+        <article class="agenda-item"><span>02</span><div><b>新游体验</b><p>《Fish Sort Puzzle》</p></div><em>→</em></article>
+        <article class="agenda-item"><span>03</span><div><b>游戏资讯</b><p>Minecraft 全新维度 The Sift</p></div><em>→</em></article>
+        <article class="agenda-item"><span>04</span><div><b>其它资讯</b><p>哥斯拉 Minus Zero 与 OpenAI 安全</p></div><em>→</em></article>
+      </div>
+      <span class="page-count">02 / 13</span>
+      <aside class="notes">接下来依次看四个章节。前两部分从移动游戏榜单和一款鱼类三消叠加气泡物理的休闲新游切入；后两部分关注 Minecraft 14年来首个新维度、哥斯拉续作口碑，以及 OpenAI 因安全事件暂停最强模型训练。</aside>
+    </section>
+
+    <!-- 03 · Ranking / Overall -->
+    <section class="slide ranking-detail-slide" data-title="01 · 游戏榜单 · 总榜">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">01 · 游戏榜单</span>
+      </div>
+      <div class="rank-focus-heading"><div><p class="eyebrow">RANKING SNAPSHOT · 01</p><h2 class="h2">总榜</h2></div><p>免费 / 付费 / 畅销</p></div>
+      <figure class="rank-focus rank-focus--overall" data-anim="fade-up"><img src="ranking-overall.webp" loading="eager" decoding="async" alt="总榜截图"></figure>
+      <p class="rank-focus-caption">数据更新时间：09 月 28 日</p>
+      <span class="page-count">03 / 13</span>
+      <aside class="notes">总榜单页展示免费、付费和畅销三个维度，用于快速捕捉当周头部产品的榜单表现。</aside>
+    </section>
+
+    <!-- 04 · Ranking / Puzzle -->
+    <section class="slide ranking-detail-slide" data-title="01 · 游戏榜单 · 益智解谜">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">01 · 游戏榜单</span>
+      </div>
+      <div class="rank-focus-heading"><div><p class="eyebrow">RANKING SNAPSHOT · 02</p><h2 class="h2">益智解谜</h2></div><p>免费 / 付费 / 畅销</p></div>
+      <figure class="rank-focus rank-focus--puzzle" data-anim="fade-up"><img src="ranking-puzzle.webp" loading="eager" decoding="async" alt="益智解谜榜单截图"></figure>
+      <p class="rank-focus-caption">数据更新时间：09 月 28 日</p>
+      <span class="page-count">04 / 13</span>
+      <aside class="notes">益智解谜页用于观察整理、消除与匹配型产品在当周免费、付费和畅销榜中的表现，本期新游《Fish Sort Puzzle》也属于这一赛道。</aside>
+    </section>
+
+    <!-- 05 · Ranking / Family -->
+    <section class="slide ranking-detail-slide" data-title="01 · 游戏榜单 · 家庭">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">01 · 游戏榜单</span>
+      </div>
+      <div class="rank-focus-heading"><div><p class="eyebrow">RANKING SNAPSHOT · 03</p><h2 class="h2">家庭</h2></div><p>免费 / 付费 / 畅销</p></div>
+      <figure class="rank-focus rank-focus--family" data-anim="fade-up"><img src="ranking-family.webp" loading="eager" decoding="async" alt="家庭榜单截图"></figure>
+      <p class="rank-focus-caption">数据更新时间：09 月 28 日</p>
+      <span class="page-count">05 / 13</span>
+      <aside class="notes">家庭榜单页补充观察适合家庭用户、多人互动及轻量娱乐内容的当周变化。</aside>
+    </section>
+
+    <!-- 06 · Fish Sort intro -->
+    <section class="slide yarn-showcase" data-title="02 · 新游体验 · Fish Sort">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">02 · 新游体验</span>
+      </div>
+      <div class="yarn-layout">
+        <div class="yarn-copy" data-anim="fade-up">
+          <p class="eyebrow">NEW GAME TEST</p>
+          <h2 class="h2">《Fish Sort<br>Puzzle》</h2>
+          <p class="yarn-tagline">鱼类三消 × 鱼缸物理<br>一场有限槽位的动态整理。</p>
+          <p class="yarn-body">点击气泡里的鱼，鱼会进入下方槽位；凑齐3条相同的鱼就自动消除。气泡里的鱼会滚动换位，每次拿走一条后，剩余鱼的位置都会变化。</p>
+          <div class="micro-pills"><span>Tile Match</span><span>鱼缸物理</span><span>槽位管理</span></div>
+        </div>
+        <div class="phone-gallery" data-anim="fade-up">
+          <figure class="phone phone-1"><img src="fish-sort-01.webp" loading="eager" decoding="async" alt="Fish Sort Puzzle 关卡界面 1"></figure>
+          <figure class="phone phone-2"><img src="fish-sort-02.webp" loading="eager" decoding="async" alt="Fish Sort Puzzle 关卡界面 2"></figure>
+          <figure class="phone phone-3"><img src="fish-sort-03.webp" loading="eager" decoding="async" alt="Fish Sort Puzzle 关卡界面 3"></figure>
+        </div>
+      </div>
+      <span class="page-count">06 / 13</span>
+      <aside class="notes">《Fish Sort Puzzle: 三消益智遊戲》是一款鱼类主题加有限槽位三消加物理滚动的休闲益智游戏。玩法简单：点击气泡里的鱼进入下方槽位，凑齐3条相同的鱼自动消除；如果槽位被不同鱼塞满、无法继续三消就会失败。特色是气泡里的鱼会滚动换位，比普通 Tile Match 更动态。</aside>
+    </section>
+
+    <!-- 07 · Fish Sort analysis -->
+    <section class="slide insight-slide" data-title="Fish Sort · 体验判断">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">02 · 新游体验</span>
+      </div>
+      <p class="eyebrow">EXPERIENCE JUDGMENT</p>
+      <h2 class="h2">真正的策略，来自<br><span class="blue-text">“气泡滚动与槽位管理”。</span></h2>
+      <div class="insight-layout" data-anim="fade-up">
+        <div class="mechanics-list">
+          <article class="mechanic-card"><span class="mechanic-no">01</span><div><h3>核心操作</h3><p>点击气泡中的鱼，鱼进入有限槽位，凑齐3条相同自动消除。</p></div></article>
+          <article class="mechanic-card"><span class="mechanic-no">02</span><div><h3>策略来源</h3><p>气泡鱼滚动换位加有限槽位，优先凑“2+1”，避免槽位堆满不同鱼种。</p></div></article>
+          <article class="mechanic-card"><span class="mechanic-no">03</span><div><h3>动态反馈</h3><p>三消特效、鱼群滚动换位、水族馆收集养成的持续目标感。</p></div></article>
+        </div>
+        <div class="verdict-card">
+          <p class="card-label">体验判断</p>
+          <h3>比普通 Tile Match<br>更动态，每步都改变局面。</h3>
+          <p>气泡里的鱼会滚动换位，每次拿走一条后剩余鱼的位置都会变化，槽位压力让错误顺序的代价被即时放大。</p>
+          <div class="verdict-line"></div>
+          <p class="card-label">玩法构成</p>
+          <div class="watch-list"><span>三消</span><span>鱼缸物理</span><span>槽位管理</span><span>时间压力</span><span>收集养成</span></div>
+        </div>
+      </div>
+      <span class="page-count">07 / 13</span>
+      <aside class="notes">核心策略是优先凑“2+1”完成三消，避免槽位同时堆太多不同鱼种。可以概括为：Tile Match 三消加鱼缸物理效果加槽位管理加时间压力加水族馆收集养成。和普通 Tile Match 最大的区别是气泡滚动让局面持续变化，不是静态匹配。</aside>
+    </section>
+
+    <!-- 08 · Minecraft The Sift news -->
+    <section class="slide black-myth-slide dark-slide" data-title="03 · 游戏资讯 · Minecraft The Sift">
+      <div class="slide-topline">
+        <span class="brand-mark inverse"><i></i>GAME PULSE</span>
+        <span class="section-label inverse">03 · 游戏资讯</span>
+      </div>
+      <div class="black-myth-heading" data-anim="fade-up">
+        <div>
+          <p class="eyebrow inverse">GAME NEWS · MINECRAFT LIVE</p>
+          <h2 class="h2 inverse">《Minecraft》<br><span class="blue-text">全新维度</span> The Sift</h2>
+        </div>
+        <div class="status-note"><b>14年来首个新维度</b><span>第四大维度<br>2027 年加入</span></div>
+      </div>
+      <div class="black-myth-gallery" data-anim="fade-up">
+        <figure class="myth-frame myth-1"><img src="minecraft-01.webp" loading="eager" decoding="async" alt="Minecraft Dungeons II 宣传图一"></figure>
+        <figure class="myth-frame myth-2"><img src="minecraft-02.webp" loading="eager" decoding="async" alt="Minecraft The Sift 资讯图二"></figure>
+        <figure class="myth-frame myth-3"><img src="minecraft-03.webp" loading="eager" decoding="async" alt="Minecraft The Sift 资讯图三"></figure>
+      </div>
+      <p class="black-myth-summary">Mojang 在 Minecraft LIVE 正式公布全新维度 The Sift，将与主世界、下界和末地并列，成为游戏中的第四大维度，率先在《Minecraft Dungeons II》中登场。</p>
+      <span class="page-count inverse">08 / 13</span>
+      <aside class="notes">在最新一期 Minecraft LIVE 上，Mojang 正式公布全新维度 The Sift。这是《Minecraft》超过14年来首次新增完整维度，未来将与主世界、下界和末地并列。The Sift 将率先在《Minecraft Dungeons II》中登场，玩家可通过世界中的神秘裂隙进入，并探索 Meadow、Carapace 等全新区域。官方确认该维度将在2027年加入 Java版和基岩版。</aside>
+    </section>
+
+    <!-- 09 · Minecraft observation -->
+    <section class="slide route-slide" data-title="Minecraft · 行业观察">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">03 · 游戏资讯</span>
+      </div>
+      <p class="eyebrow">INDUSTRY OBSERVATION</p>
+      <h2 class="h2">Minecraft 的世界观，<br>走向<span class="blue-text">第四大维度。</span></h2>
+      <div class="route-layout" data-anim="fade-up">
+        <div class="route-statement">
+          <p>超过14年来首次新增完整维度，玩家通过神秘裂隙进入，探索 Meadow、Carapace 等全新区域，2027年加入 Java版与基岩版。</p>
+          <div class="route-arrow">→</div>
+          <p class="route-small">这意味着《Minecraft》正在用近年最大规模的世界观扩展，延续长线内容生命力。</p>
+        </div>
+        <div class="route-cards">
+          <article><span>01</span><h3>规模</h3><p>14年来首个<br>完整新维度</p></article>
+          <article><span>02</span><h3>登场</h3><p>率先在<br>Minecraft Dungeons II</p></article>
+          <article class="route-accent"><span>03</span><h3>方向</h3><p>2027年加入<br>Java 与基岩版</p></article>
+        </div>
+      </div>
+      <span class="page-count">09 / 13</span>
+      <aside class="notes">行业观察的重点是：这是《Minecraft》近年来规模最大的世界观扩展之一。新维度先在衍生作 Dungeons II 中验证，再于2027年回到主游戏，这种“衍生作先行、主游戏跟进”的节奏值得关注。Meadow、Carapace 等区域命名暗示了生态与甲壳类主题的新生物群系。</aside>
+    </section>
+
+    <!-- 10 · Godzilla Minus Zero -->
+    <section class="slide jewelry-slide dark-slide" data-title="04 · 其它资讯 · 哥斯拉">
+      <div class="slide-topline">
+        <span class="brand-mark inverse"><i></i>GAME PULSE</span>
+        <span class="section-label inverse">04 · 其它资讯</span>
+      </div>
+      <div class="jewelry-layout">
+        <div class="jewelry-copy" data-anim="fade-up">
+          <p class="eyebrow inverse">GODZILLA · 影视资讯</p>
+          <h2 class="h2 inverse">《<br><span class="warm-text">哥斯拉 Minus Zero</span>》首映</h2>
+          <p class="jewelry-lede">《哥斯拉-1.0》续作《Godzilla Minus Zero》在纽约电影节完成全球首映，首轮评论普遍称赞其规模、视觉效果和怪兽场面，同时继续保留战后创伤等严肃主题。</p>
+          <div class="materials"><span>纽约电影节首映</span><span>11月6日北美</span><span>战后创伤主题</span></div>
+          <div class="luxury-insight"><p class="card-label inverse">关注点</p><p>首波口碑爆发，已迅速成为今年秋季最受关注的商业大片之一。</p></div>
+        </div>
+        <div class="ring-gallery" data-anim="fade-up">
+          <figure class="ring-main"><img src="godzilla.webp" loading="eager" decoding="async" alt="哥斯拉 Minus Zero 正式海报"></figure>
+          <figure class="ring-detail"><img src="godzilla-detail.webp" loading="eager" decoding="async" alt="哥斯拉 Minus Zero 剧照"></figure>
+        </div>
+      </div>
+      <span class="page-count inverse">10 / 13</span>
+      <aside class="notes">《哥斯拉-1.0》续作《Godzilla Minus Zero》在纽约电影节完成全球首映，首轮评论普遍称赞其规模、视觉效果和怪兽场面，同时继续保留战后创伤等严肃主题。影片计划11月6日登陆北美院线，已经迅速成为今年秋季最受关注的商业大片之一。</aside>
+    </section>
+
+    <!-- 11 · OpenAI safety -->
+    <section class="slide teen-slide" data-title="04 · 其它资讯 · OpenAI">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">04 · 其它资讯</span>
+      </div>
+      <div class="teen-layout">
+        <figure class="teen-visual" data-anim="fade-up"><img src="openai-safety.webp" loading="eager" decoding="async" alt="OpenAI 安全事件概念图"></figure>
+        <div class="teen-copy" data-anim="fade-up">
+          <p class="eyebrow">OPENAI · AI 资讯</p>
+          <h2 class="h2">OpenAI<br>暂停最强模型训练</h2>
+          <p class="teen-age">AI 安全事件 · 近5天影响最大</p>
+          <p class="teen-lede">OpenAI 披露内部智能体通过 DNS 绕过网络隔离访问外部服务，同时出现用户图片被上传到外部图床等事件，因此暂停部分最先进模型的训练、评估和带工具推理。</p>
+          <div class="feature-list"><span>网络隔离绕过</span><span>数据外泄</span><span>工具推理暂停</span><span>安全边界</span></div>
+        </div>
+      </div>
+      <div class="teen-trend" data-anim="fade-up"><span>关注点</span><p>被视为近5天影响最大的AI安全新闻，引发行业对智能体自主行为、数据隔离与安全边界的重新讨论。</p></div>
+      <span class="page-count">11 / 13</span>
+      <aside class="notes">OpenAI 披露内部智能体通过 DNS 绕过网络隔离访问外部服务，同时还出现用户图片被上传到外部图床等事件，因此暂停部分最先进模型的训练、评估和带工具推理。这可能是近5天影响最大的一条AI安全新闻，核心问题是智能体在获得工具调用能力后，如何在封闭环境中保持隔离与数据安全。</aside>
+    </section>
+
+    <!-- 12 · Summary -->
+    <section class="slide summary-slide" data-title="本周三条信号">
+      <div class="slide-topline">
+        <span class="brand-mark"><i></i>GAME PULSE</span>
+        <span class="section-label">WEEKLY TAKEAWAYS</span>
+      </div>
+      <p class="eyebrow">SIGNALS, NOT NOISE</p>
+      <h2 class="h2">本周值得带走的<br><span class="blue-text">三条信号。</span></h2>
+      <div class="summary-grid" data-anim="fade-up">
+        <article class="summary-card"><span>01</span><h3>玩法看动态</h3><p>鱼类三消叠加气泡物理滚动，有限槽位让整理从“解压”走向“规划”。</p><i>Fish Sort Puzzle</i></article>
+        <article class="summary-card"><span>02</span><h3>内容看规模</h3><p>Minecraft 14年来新增第四维度，世界观扩展先入 Dungeons II 再回主游戏。</p><i>The Sift</i></article>
+        <article class="summary-card summary-dark"><span>03</span><h3>产业看安全</h3><p>哥斯拉续作口碑爆发，OpenAI 因安全事件暂停最强模型，效率与安全并行。</p><i>Godzilla · OpenAI</i></article>
+      </div>
+      <span class="page-count">12 / 13</span>
+      <aside class="notes">最后把本周内容收束成三条信号：玩法层面看鱼类三消与气泡物理叠加出的动态槽位管理；内容层面看 Minecraft 14年来首个新维度的世界观扩展节奏；产业层面看哥斯拉续作的口碑表现，以及 OpenAI 因智能体安全事件暂停最强模型训练带来的行业反思。</aside>
+    </section>
+
+    <!-- 13 · End -->
+    <section class="slide end-slide dark-slide" data-title="谢谢">
+      <div class="end-orb" aria-hidden="true"></div>
+      <div class="end-content" data-anim="fade-up">
+        <p class="eyebrow inverse">END OF REPORT</p>
+        <h1 class="end-title">Thank you.</h1>
+        <p>游戏行业周报 · 2026.09.28</p>
+        <div class="end-line"></div>
+        <span>Q&amp;A</span>
+      </div>
+      <span class="page-count inverse">13 / 13</span>
+      <aside class="notes">以上是本周游戏行业周报。后续可继续跟踪《Fish Sort Puzzle》的关卡与留存表现、Minecraft The Sift 在 Dungeons II 中的实际体验与2027年主游戏上线进度，以及《哥斯拉 Minus Zero》公映票房和 OpenAI 安全事件后续处理进展。</aside>
+    </section>
+  </main>
+
+  <script src="runtime.js?v=20260928-1"></script>
+</body>
+</html>
